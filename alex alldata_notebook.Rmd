@@ -431,11 +431,8 @@ anova.test.measInv.scalar<-as.data.frame(anova(fit.group.loadings,fit.group.inte
 anova.test.measInv.scalar
 anova.test.measInv.strict<-as.data.frame(anova(fit.group.intercepts,fit.group.residuals))
 anova.test.measInv.strict
-
+summary(fit.group.residuals,fit.measures=T)
 
 ```
 
-#summary(fit.group.residuals,fit.measures=T)
-##If we look at the most constrained model, we see that fit stats are high, indicating
-##that the model fits equally well in both groups. The only parameters left to vary
-##are means and variances of the factors. Autistic group has lower mean and bigger variance
+If we look at the most constrained model, we see that fit stats are high, indicating that the model fits equally well in both groups. The only parameters left to vary are means and variances of the factors. Autistic group has lower mean and bigger variance
